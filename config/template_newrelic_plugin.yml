@@ -40,40 +40,4 @@ agents:
     # Note: This logs the metrics locally and does not send data to new relic.
     #debug: false
 
-# Configuration for vFabric Web Server/mod_bmx
-  httpd_mod_bmx:
-    # The - allows you to define multiple servers
-    #-
-      #hostname: localhost
-      #hostport: 80
-      # Set "debug: true" to see metrics in stdout instead of sent to New Relic"
-      #debug: false
-      # Set "testrun: true" to use input from local text/html files. Only parses input once, then quits.
-      #testrun: false
-    #-
-      #hostname: www
-      #hostport: 80
-      # Set "debug: true" to see metrics in stdout instead of sent to New Relic"
-      #debug: false
-      # Set "testrun: true" to use input from local text/html files. Only parses input once, then quits.
-      #testrun: false
-
-# Configuration for Redis
-  redis:
-    # The - allows you to define multiple servers
-    #-
-      #hostname: localhost
-      #hostport: 6379
-      # Set "debug: true" to see metrics in stdout instead of sent to New Relic"
-      #debug: false
-      # Set "testrun: true" to use input from local text/html files. Only parses input once, then quits.
-      #testrun: false
-    #-
-      #hostname: localhost
-      #hostport: 6389
-      # Set "debug: true" to see metrics in stdout instead of sent to New Relic"
-      #debug: false
-      # Set "testrun: true" to use input from local text/html files. Only parses input once, then quits.
-      #testrun: false
-
 
