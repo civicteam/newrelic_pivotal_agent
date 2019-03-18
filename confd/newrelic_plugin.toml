@@ -1,0 +1,4 @@
+# This file is used by confd for source and destination config template mapping.
+[template]
+src = "newrelic_plugin.yml.tmpl"
+dest = "/config/newrelic_plugin.yml"
