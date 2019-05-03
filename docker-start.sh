@@ -4,12 +4,12 @@ set -e
 set -u
 
 # ensure that volumes were set and the dependencies started before running the application
+echo "Verifying if config directory exists"
 ./wait-dir.sh ${NODE_CONFIG_DIR}
 
-source ${NODE_CONFIG_DIR}/${NODE_ENV}
-export $(cut -d= -f1 -f2 ${NODE_CONFIG_DIR}/${NODE_ENV})
+export $(cut -d= -f1,2 ${NODE_CONFIG_DIR}/${NODE_ENV})
 
-source ${NODE_CONFIG_DIR}/secrets
-export $(cut -d= -f1 -f2 ${NODE_CONFIG_DIR}/secrets)
+# export $(cut -d= -f1,2 ${NODE_CONFIG_DIR}/secrets)
 
+# echo "Starting RabbitMQ Monitoring"
 ./start.sh 
