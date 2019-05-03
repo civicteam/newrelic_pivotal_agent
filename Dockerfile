@@ -25,6 +25,8 @@ COPY confd/newrelic_plugin.toml /etc/confd/conf.d/newrelic_plugin.toml
 COPY confd/newrelic_plugin.yml.tmpl /etc/confd/templates/newrelic_plugin.yml.tmpl
 
 RUN chmod +x ./start.sh
+RUN chmod +x ./docker-start.sh
+RUN chmod +x ./wait-for.sh
 
 # Entry point
-CMD ["./start.sh"]
+CMD ["./docker-start.sh"]
