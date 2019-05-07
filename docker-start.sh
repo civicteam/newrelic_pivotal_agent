@@ -9,7 +9,7 @@ echo "Verifying if config directory exists"
 
 export $(cut -d= -f1,2 ${NODE_CONFIG_DIR}/${NODE_ENV})
 
-# export $(cut -d= -f1,2 ${NODE_CONFIG_DIR}/secrets)
+export $(cut -d= -f1,2 ${NODE_CONFIG_DIR}/secrets)
 
 # echo "Starting RabbitMQ Monitoring"
 ./start.sh 
