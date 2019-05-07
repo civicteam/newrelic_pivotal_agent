@@ -32,7 +32,7 @@ agents:
     # Note: When monitoring multiple nodes you should use the real hostnames instead of localhost
     # Uncomment the appropriate line for your version
     # RabbitMQ Default URL version 3.0
-    management_api_url: '{{getenv "MANAGEMENT_API_URL"}}'
+    management_api_url: http://user:{{getenv "rabbitmq-password"}}@{{getenv "MANAGEMENT_API_URL"}}
     # RabbitMQ Default URL versions prior to 3.0
     #management_api_url: http://guest:guest@localhost:55672
     #
